@@ -1,9 +1,9 @@
-# Cedarpark FC website preview
+# Cedarpark FC public preview
 
-Published static website files for Cedarpark FC. Unity is Strength.
+Unity is Strength. Version 0.2.0.
 
-This is the initial website preview. Club-confirmed contacts, fixtures, team information and stories will be added as supplied. The full project and maintenance source are held separately in a private repository.
+Visit https://blackstackdev.github.io/cedarpark-fc-site/
 
-The files here are the same HTML, styles, JavaScript, crest and fonts delivered to website visitors. No original presentation, private operational documents, credentials, youth records or test data are included.
+This repository contains only the finished static website and required font/icon licence notices. The complete maintenance project stays private. Real club information is being confirmed; no fixture records or public contacts have been invented. Football atmosphere artwork is illustrative. No tracking, forms or personal-data collection.
 
-Club assets remain with their respective rights holders. No open-source licence is granted for the website design or client assets. Included fonts retain their respective Open Font Licence notices in font-licenses/.
+Club identity remains with its respective rights holder; third-party assets retain their included licences.

@@ -3,112 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#10a9bc" />
+    <meta name="theme-color" content="#0b1719" />
     <meta
       name="description"
       content="Cedarpark FC. Unity is Strength. Club updates, fixtures and results, on the pitch and beyond the touchline."
     />
     <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cedarpark FC — Unity is Strength" />
+    <meta
+      property="og:description"
+      content="On the pitch and beyond the touchline. The home of Cedarpark FC."
+    />
+    <meta
+      property="og:url"
+      content="https://blackstackdev.github.io/cedarpark-fc-site/"
+    />
+    <meta
+      property="og:image"
+      content="https://blackstackdev.github.io/cedarpark-fc-site/assets/matchday-atmosphere.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Illustrative football atmosphere: a ball on grass under floodlights."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="canonical"
+      href="https://blackstackdev.github.io/cedarpark-fc-site/"
+    />
     <link rel="icon" type="image/png" href="./assets/cedarpark-crest.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/matchday-atmosphere.webp"
+      fetchpriority="high"
+    />
     <title>Cedarpark FC — Unity is Strength</title>
-    <script type="module" crossorigin src="./assets/index-1sj-knTv.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-TyanCzDL.css">
+    <script type="module" crossorigin src="./assets/index-BLmKg6Xx.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-SJesZOrn.css">
   </head>
   <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Cedarpark FC home">
-        <img src="./assets/cedarpark-crest.png" alt="" width="86" height="86" />
-        <span>CEDARPARK<br />FOOTBALL CLUB</span>
-      </a>
+      <a class="brand" href="#top" aria-label="Cedarpark FC home"
+        ><img
+          src="./assets/cedarpark-crest.png"
+          alt=""
+          width="76"
+          height="76"
+        /><span class="brand-wordmark"
+          ><strong>CEDARPARK</strong><span>FOOTBALL CLUB</span></span
+        ></a
+      >
       <button
         class="menu-toggle"
         aria-expanded="false"
         aria-controls="main-nav"
       >
-        Menu <span class="menu-lines" aria-hidden="true"></span>
+        Menu <span data-icon="menu"></span>
       </button>
       <nav id="main-nav" aria-label="Main navigation">
-        <a href="#club">The club</a>
-        <a href="#match-centre">Match centre</a>
-        <button data-panel="journal">Club journal</button>
-        <button class="button button-black" data-panel="contact">
-          Get in touch
-          <svg class="icon" aria-hidden="true">
-            <use href="#arrow-up-right" />
-          </svg>
+        <a href="#match-centre" data-nav="match-centre">Match centre</a
+        ><a href="#club" data-nav="club">The club</a
+        ><a href="#journal" data-nav="journal">Journal</a
+        ><button class="button button-ink" data-contact>
+          Club enquiries <span data-icon="arrow-up-right"></span>
         </button>
       </nav>
+      <div class="reading-progress" aria-hidden="true"></div>
     </header>
-
     <main id="main">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <h1 id="hero-title">
-            <span>UNITY</span><span>IS</span
-            ><span class="turquoise">STRENGTH</span>
-          </h1>
-          <p>
-            The home of Cedarpark FC. On the pitch and beyond the touchline.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-turquoise" href="#club"
-              >Explore the club
-              <svg class="icon" aria-hidden="true">
-                <use href="#arrow-up-right" /></svg></a
-            ><a class="text-link" href="#match-centre">Match centre</a>
+        <img
+          class="hero-media"
+          src="./assets/matchday-atmosphere.webp"
+          width="1672"
+          height="941"
+          alt=""
+          fetchpriority="high"
+        />
+        <div class="hero-content">
+          <div class="hero-copy">
+            <h1 id="hero-title"><span>UNITY IS</span><span>STRENGTH</span></h1>
+            <div class="hero-intro">
+              <p>The home of Cedarpark FC.</p>
+              <p>On the pitch and beyond the touchline.</p>
+            </div>
+            <div class="hero-actions">
+              <a class="button button-turquoise" href="#match-centre"
+                >Match centre <span data-icon="arrow-right"></span></a
+              ><a class="button button-outline" href="#club"
+                >Explore the club <span data-icon="arrow-up-right"></span
+              ></a>
+            </div>
           </div>
         </div>
-        <div class="crest-stage hero-crest" aria-hidden="true">
-          <div class="pitch-circle"></div>
-          <img
-            src="./assets/cedarpark-crest.png"
-            alt=""
-            width="640"
-            height="640"
-          /><span class="orange-mark"></span>
+        <div class="hero-rail">
+          <span class="rail-name">CEDARPARK FC</span
+          ><button class="copy-link" data-copy="club">
+            Copy club link <span data-icon="copy"></span>
+          </button>
         </div>
       </section>
-      <div class="identity-strip" aria-hidden="true">
-        <span>CEDARPARK FC</span><span>UNITY IS STRENGTH</span>
-      </div>
-
       <section
-        class="match-section"
         id="match-centre"
+        class="match-section section-space"
         aria-labelledby="match-title"
       >
-        <div class="section-heading">
+        <div class="section-heading" data-reveal>
           <h2 id="match-title">MATCH CENTRE</h2>
-          <p>Fixtures and results. Every division, in one place.</p>
+          <span class="heading-rule"></span>
+          <p>Fixtures. Results. Every division.</p>
         </div>
         <div class="match-toolbar">
           <div class="match-tabs" role="tablist" aria-label="Match information">
             <button
               id="fixtures-tab"
               role="tab"
+              data-match-tab="fixtures"
               aria-selected="true"
               aria-controls="matches-panel"
-              data-match-tab="fixtures"
             >
               Fixtures</button
             ><button
               id="results-tab"
               role="tab"
+              data-match-tab="results"
               aria-selected="false"
               aria-controls="matches-panel"
               tabindex="-1"
-              data-match-tab="results"
             >
               Results
             </button>
           </div>
-          <label class="division-control"
+          <label class="select-control"
             ><span class="sr-only">Filter by division</span
             ><select id="division">
               <option value="all">All divisions</option></select
-            ><svg class="icon" aria-hidden="true"><use href="#chevron" /></svg
-          ></label>
+            ><span data-icon="chevron-down"></span></label
+          ><label class="search-control match-search"
+            ><span data-icon="search"></span
+            ><span class="sr-only">Search matches</span
+            ><input
+              id="match-search"
+              type="search"
+              placeholder="Search matches"
+              maxlength="80"
+              autocomplete="off"
+          /></label>
+        </div>
+        <div id="filter-summary" class="filter-summary" hidden>
+          <span id="filter-count"></span
+          ><button id="reset-filters" class="quiet-button">
+            Reset filters <span data-icon="x"></span>
+          </button>
         </div>
         <div
           id="matches-panel"
@@ -116,139 +165,195 @@
           aria-labelledby="fixtures-tab"
           tabindex="0"
         >
-          <div id="match-status" role="status" aria-live="polite"></div>
+          <p
+            id="match-status"
+            class="sr-only"
+            role="status"
+            aria-live="polite"
+          ></p>
           <div id="match-content" class="match-content">
             <div class="empty-state">
-              <div class="calendar-pitch" aria-hidden="true">
-                <svg><use href="#calendar" /></svg>
-              </div>
+              <svg class="pitch-mark" viewBox="0 0 360 240" aria-hidden="true">
+                <use href="#pitch-lines"></use>
+              </svg>
               <div class="empty-copy">
                 <h3>THE NEXT WHISTLE.</h3>
                 <p>Confirmed fixtures will appear here.</p>
-                <span>Check back for the next Cedarpark matchday.</span>
+                <span>Check back for the next matchday.</span>
               </div>
             </div>
           </div>
         </div>
         <div class="match-signoff">
-          <div>
-            <p>Club-confirmed updates.</p>
-            <strong>See you on the touchline.</strong>
+          <p>Club-confirmed fixtures and results.</p>
+          <div class="match-tools">
+            <button id="download-fixtures" class="quiet-button" hidden>
+              Download fixtures <span data-icon="calendar-days"></span></button
+            ><button class="copy-link" data-copy="matches">
+              Copy match-centre link <span data-icon="copy"></span>
+            </button>
           </div>
-          <a href="#club" aria-label="Continue to the club"
-            ><svg class="icon" aria-hidden="true">
-              <use href="#arrow-down" /></svg
-          ></a>
         </div>
       </section>
-
-      <section class="club-section" id="club" aria-labelledby="club-title">
-        <div class="club-copy">
+      <section
+        id="club"
+        class="club-section section-space"
+        aria-labelledby="club-title"
+      >
+        <div class="club-copy" data-reveal>
           <h2 id="club-title">THE BADGE.<br />THE PEOPLE.</h2>
-          <p>Cedarpark FC, on and off the pitch.</p>
-          <div class="club-link">
-            <button class="text-link" data-panel="club">
-              Inside the club
-              <svg class="icon" aria-hidden="true">
-                <use href="#arrow-up-right" />
-              </svg></button
-            ><span>Our story, our teams and the people behind the badge.</span>
+          <div class="club-tabs" role="tablist" aria-label="Club information">
+            <button
+              id="story-tab"
+              data-club-tab="story"
+              role="tab"
+              aria-selected="true"
+              aria-controls="club-panel"
+            >
+              Our story</button
+            ><button
+              id="teams-tab"
+              data-club-tab="teams"
+              role="tab"
+              aria-selected="false"
+              aria-controls="club-panel"
+              tabindex="-1"
+            >
+              Our teams
+            </button>
+          </div>
+          <div
+            id="club-panel"
+            role="tabpanel"
+            aria-labelledby="story-tab"
+            tabindex="0"
+          >
+            <p class="club-lead">
+              Unity is Strength.<br />On the pitch and beyond the touchline.
+            </p>
+            <p>Our club story is being put together with Cedarpark FC.</p>
           </div>
         </div>
-        <div class="crest-stage club-crest" aria-hidden="true">
-          <div class="pitch-circle"></div>
+        <div class="crest-frame" data-reveal>
           <img
             src="./assets/cedarpark-crest.png"
-            alt=""
+            alt="Cedarpark FC crest"
             width="640"
             height="640"
-          /><span class="orange-mark"></span>
+            loading="lazy"
+          />
         </div>
       </section>
-      <section class="contact-band" aria-labelledby="contact-title">
-        <h2 id="contact-title">PART OF THE CLUB?</h2>
+      <section
+        id="journal"
+        class="journal-section section-space"
+        aria-labelledby="journal-title"
+      >
+        <div class="journal-heading" data-reveal>
+          <h2 id="journal-title">FROM THE TOUCHLINE.</h2>
+          <label class="search-control"
+            ><span class="sr-only">Search stories</span
+            ><input
+              id="journal-search"
+              type="search"
+              placeholder="Search stories"
+              maxlength="80"
+              autocomplete="off" /><span data-icon="search"></span
+          ></label>
+        </div>
+        <div id="journal-content" class="journal-content">
+          <div class="journal-empty">
+            <span data-icon="newspaper" class="journal-symbol"></span>
+            <div>
+              <h3>STORIES FROM CEDARPARK.</h3>
+              <p>Club news, match reports and the people behind the badge.</p>
+              <span>Club-confirmed stories will appear here.</span
+              ><button class="text-link" data-contact>
+                Club enquiries <span data-icon="arrow-up-right"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <p
+          id="journal-announcement"
+          class="sr-only"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </section>
+      <section
+        id="contact"
+        class="contact-band"
+        aria-labelledby="contact-title"
+      >
+        <h2 id="contact-title" data-reveal>LET’S TALK<br />FOOTBALL.</h2>
         <div>
           <p>Players. Supporters. Volunteers.</p>
-          <button class="button button-black" data-panel="contact">
-            Club enquiries
-            <svg class="icon" aria-hidden="true">
-              <use href="#arrow-up-right" />
-            </svg>
+          <button class="button button-ink" data-contact>
+            Club enquiries <span data-icon="arrow-up-right"></span>
           </button>
         </div>
       </section>
     </main>
-
-    <footer>
+    <footer class="site-footer">
       <div class="footer-main">
         <a class="footer-brand" href="#top"
           ><img
             src="./assets/cedarpark-crest.png"
-            width="60"
-            height="60"
             alt=""
-          /><span>CEDARPARK FC</span></a
+            width="58"
+            height="58"
+          /><strong>CEDARPARK FC</strong></a
         >
         <nav aria-label="Footer navigation">
-          <a href="#club">The club</a><a href="#match-centre">Match centre</a
-          ><button data-panel="journal">Club journal</button>
+          <a href="#match-centre">Match centre</a><a href="#club">The club</a
+          ><a href="#journal">Journal</a>
         </nav>
+        <button class="copy-link footer-share" data-copy="club">
+          Copy club link <span data-icon="copy"></span>
+        </button>
       </div>
       <div class="footer-base">
-        <span>CEDARPARK FC <small>v0.1.0</small></span
-        ><a href="#top"
-          >Back to top
-          <svg class="icon" aria-hidden="true"><use href="#arrow-up" /></svg
-        ></a>
+        <span>UNITY IS STRENGTH <small>v0.2.0</small></span
+        ><a href="#top">Back to top <span data-icon="arrow-up"></span></a>
       </div>
     </footer>
-
     <dialog id="club-dialog" aria-labelledby="dialog-title">
       <div class="dialog-top">
         <span>CEDARPARK FC</span
         ><button id="dialog-close" aria-label="Close panel">
-          <svg class="icon" aria-hidden="true"><use href="#close" /></svg>
+          <span data-icon="x"></span>
         </button>
       </div>
       <div class="dialog-body">
-        <h2 id="dialog-title"></h2>
+        <h2 id="dialog-title">CLUB ENQUIRIES</h2>
         <div id="dialog-content"></div>
       </div>
       <div class="dialog-bottom">UNITY IS STRENGTH</div>
     </dialog>
+    <div
+      id="toast"
+      class="toast"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
     <noscript
-      ><p class="noscript">
-        Enable JavaScript to use match filters and open club information panels.
+      ><p class="noscript-message">
+        Enable JavaScript to browse club updates and match filters. Confirmed
+        club details are being prepared.
       </p></noscript
     >
-    <svg
-      class="svg-sprite"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <symbol id="arrow-up-right" viewBox="0 0 24 24">
-        <path d="M5 19 19 5M5 5h14v14" />
-      </symbol>
-      <symbol id="arrow-down" viewBox="0 0 24 24">
-        <path d="M12 3v18M4 13l8 8 8-8" />
-      </symbol>
-      <symbol id="arrow-up" viewBox="0 0 24 24">
-        <path d="M12 21V3M4 11l8-8 8 8" />
-      </symbol>
-      <symbol id="chevron" viewBox="0 0 24 24">
-        <path d="m5 9 7 7 7-7" />
-      </symbol>
-      <symbol id="close" viewBox="0 0 24 24">
-        <path d="m5 5 14 14M19 5 5 19" />
-      </symbol>
-      <symbol id="calendar" viewBox="0 0 120 120">
-        <rect x="16" y="24" width="88" height="82" rx="8" />
-        <path d="M16 48h88M38 12v26M82 12v26" />
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="pitch-lines" viewBox="0 0 360 240">
+        <rect x="8" y="8" width="344" height="224" rx="1" />
         <path
-          stroke-width="8"
-          stroke-linecap="square"
-          d="M38 65h1m21 0h1m21 0h1M38 86h1m21 0h1m21 0h1"
+          d="M180 8v224M8 58h57v124H8m0-96h22v68H8m344-96h-57v124h57m0-96h-22v68h22"
         />
+        <circle cx="180" cy="120" r="42" />
+        <circle cx="180" cy="120" r="2" />
+        <circle cx="47" cy="120" r="2" />
+        <circle cx="313" cy="120" r="2" />
       </symbol>
     </svg>
   </body>

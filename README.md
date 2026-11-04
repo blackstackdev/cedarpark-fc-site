@@ -1,9 +1,11 @@
-# Cedarpark FC public preview
+# Cedarpark FC — premium club edition
 
-Unity is Strength. Version 0.2.0.
+Unity is Strength. Version 0.3.0.
 
-Visit https://blackstackdev.github.io/cedarpark-fc-site/
+Preview URL: https://blackstackdev.github.io/cedarpark-fc-site/
 
-This repository contains only the finished static website and required font/icon licence notices. The complete maintenance project stays private. Real club information is being confirmed; no fixture records or public contacts have been invented. Football atmosphere artwork is illustrative. No tracking, forms or personal-data collection.
+Website by Krēˈādiv Worx.
 
-Club identity remains with its respective rights holder; third-party assets retain their included licences.
+Finished static website files and required font/icon notices only. Full maintenance source stays private. Real club facts/public contacts are being confirmed; none invented. Goal-net artwork is anonymous illustrative football atmosphere, not the club's venue. No tracking, forms or personal-data collection.
+
+Club identity remains with its rights holders; third-party assets retain their included licences.

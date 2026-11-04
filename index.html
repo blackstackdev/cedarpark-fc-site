@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1719" />
+    <meta name="theme-color" content="#10191a" />
+    <meta name="author" content="Krēˈādiv Worx" />
+    <meta name="application-version" content="0.3.0" />
     <meta
       name="description"
       content="Cedarpark FC. Unity is Strength. Club updates, fixtures and results, on the pitch and beyond the touchline."
@@ -21,11 +23,11 @@
     />
     <meta
       property="og:image"
-      content="https://blackstackdev.github.io/cedarpark-fc-site/assets/matchday-atmosphere.jpg"
+      content="https://blackstackdev.github.io/cedarpark-fc-site/assets/goal-net.jpg"
     />
     <meta
       property="og:image:alt"
-      content="Illustrative football atmosphere: a ball on grass under floodlights."
+      content="Illustrative football atmosphere: a white goalpost and net on wet grass."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <link
@@ -36,12 +38,12 @@
     <link
       rel="preload"
       as="image"
-      href="./assets/matchday-atmosphere.webp"
+      href="./assets/goal-net.webp"
       fetchpriority="high"
     />
     <title>Cedarpark FC — Unity is Strength</title>
-    <script type="module" crossorigin src="./assets/index-BLmKg6Xx.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-SJesZOrn.css">
+    <script type="module" crossorigin src="./assets/index-Bp-O89z3.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-63XeElsv.css">
   </head>
   <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -75,28 +77,39 @@
     </header>
     <main id="main">
       <section class="hero" aria-labelledby="hero-title">
-        <img
-          class="hero-media"
-          src="./assets/matchday-atmosphere.webp"
-          width="1672"
-          height="941"
-          alt=""
-          fetchpriority="high"
-        />
-        <div class="hero-content">
+        <div class="hero-layout">
           <div class="hero-copy">
-            <h1 id="hero-title"><span>UNITY IS</span><span>STRENGTH</span></h1>
+            <h1 id="hero-title" aria-label="Unity is Strength">
+              <span>UNITY IS</span
+              ><span class="hero-emphasis"
+                >STRENGTH<span class="hero-period" aria-hidden="true"
+                  >.</span
+                ></span
+              >
+            </h1>
             <div class="hero-intro">
               <p>The home of Cedarpark FC.</p>
               <p>On the pitch and beyond the touchline.</p>
             </div>
             <div class="hero-actions">
-              <a class="button button-turquoise" href="#match-centre"
-                >Match centre <span data-icon="arrow-right"></span></a
-              ><a class="button button-outline" href="#club"
+              <a class="circle-action" href="#match-centre"
+                ><span class="arrow-disc"
+                  ><span data-icon="arrow-right"></span></span
+                ><span>Match centre</span></a
+              ><a class="hero-secondary" href="#club"
                 >Explore the club <span data-icon="arrow-up-right"></span
               ></a>
             </div>
+          </div>
+          <div class="hero-frame">
+            <img
+              class="hero-media"
+              src="./assets/goal-net.webp"
+              width="1254"
+              height="1254"
+              alt=""
+              fetchpriority="high"
+            />
           </div>
         </div>
         <div class="hero-rail">
@@ -112,9 +125,14 @@
         aria-labelledby="match-title"
       >
         <div class="section-heading" data-reveal>
-          <h2 id="match-title">MATCH CENTRE</h2>
-          <span class="heading-rule"></span>
-          <p>Fixtures. Results. Every division.</p>
+          <div class="section-title-group">
+            <span class="section-index" aria-hidden="true">01</span>
+            <h2 id="match-title">MATCH CENTRE</h2>
+          </div>
+          <div class="heading-tail">
+            <span class="heading-rule"></span>
+            <p>Fixtures. Results. Every division.</p>
+          </div>
         </div>
         <div class="match-toolbar">
           <div class="match-tabs" role="tablist" aria-label="Match information">
@@ -200,6 +218,10 @@
         class="club-section section-space"
         aria-labelledby="club-title"
       >
+        <div class="club-topline">
+          <span class="section-index" aria-hidden="true">02</span
+          ><span>CEDARPARK FC</span><span class="heading-rule"></span>
+        </div>
         <div class="club-copy" data-reveal>
           <h2 id="club-title">THE BADGE.<br />THE PEOPLE.</h2>
           <div class="club-tabs" role="tablist" aria-label="Club information">
@@ -242,6 +264,9 @@
             height="640"
             loading="lazy"
           />
+          <div class="crest-caption">
+            <span>CEDARPARK FC</span><span>UNITY IS STRENGTH</span>
+          </div>
         </div>
       </section>
       <section
@@ -250,7 +275,10 @@
         aria-labelledby="journal-title"
       >
         <div class="journal-heading" data-reveal>
-          <h2 id="journal-title">FROM THE TOUCHLINE.</h2>
+          <div class="section-title-group">
+            <span class="section-index" aria-hidden="true">03</span>
+            <h2 id="journal-title">FROM THE TOUCHLINE.</h2>
+          </div>
           <label class="search-control"
             ><span class="sr-only">Search stories</span
             ><input
@@ -286,36 +314,35 @@
         class="contact-band"
         aria-labelledby="contact-title"
       >
-        <h2 id="contact-title" data-reveal>LET’S TALK<br />FOOTBALL.</h2>
-        <div>
+        <div class="contact-heading" data-reveal>
+          <span class="section-index" aria-hidden="true">04</span>
+          <h2 id="contact-title">LET’S TALK<br />FOOTBALL.</h2>
+        </div>
+        <div class="contact-action">
           <p>Players. Supporters. Volunteers.</p>
-          <button class="button button-ink" data-contact>
-            Club enquiries <span data-icon="arrow-up-right"></span>
+          <button class="circle-action" data-contact>
+            <span class="arrow-disc"
+              ><span data-icon="arrow-up-right"></span></span
+            ><span>Club enquiries</span>
           </button>
         </div>
       </section>
     </main>
     <footer class="site-footer">
-      <div class="footer-main">
-        <a class="footer-brand" href="#top"
-          ><img
-            src="./assets/cedarpark-crest.png"
-            alt=""
-            width="58"
-            height="58"
-          /><strong>CEDARPARK FC</strong></a
-        >
+      <div class="footer-wordmark" aria-hidden="true">CEDARPARK</div>
+      <div class="footer-utility">
+        <span class="footer-slogan">UNITY IS STRENGTH</span>
         <nav aria-label="Footer navigation">
           <a href="#match-centre">Match centre</a><a href="#club">The club</a
           ><a href="#journal">Journal</a>
         </nav>
-        <button class="copy-link footer-share" data-copy="club">
+        <button class="copy-link" data-copy="club">
           Copy club link <span data-icon="copy"></span>
         </button>
       </div>
       <div class="footer-base">
-        <span>UNITY IS STRENGTH <small>v0.2.0</small></span
-        ><a href="#top">Back to top <span data-icon="arrow-up"></span></a>
+        <p class="studio-credit">Website by <strong>Krēˈādiv Worx</strong></p>
+        <a href="#top">Back to top <span data-icon="arrow-up"></span></a>
       </div>
     </footer>
     <dialog id="club-dialog" aria-labelledby="dialog-title">
